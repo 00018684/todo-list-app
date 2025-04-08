@@ -10,7 +10,7 @@ router.get('', async (req, res) => {
   try {
     const locals = {
       title: "NodeJs Blog",
-      description: "Simple Blog created with NodeJs, Express & MongoDb."
+      description: "Simple web app created with NodeJs, Express & MongoDb."
     }
 
     let perPage = 10;
@@ -52,7 +52,7 @@ router.get('/post/:id', async (req, res) => {
 
     const locals = {
       title: data.title,
-      description: "Simple Blog created with NodeJs, Express & MongoDb.",
+      description: "Simple web app created with NodeJs, Express & MongoDb.",
     }
 
     res.render('post', { 
@@ -75,7 +75,7 @@ router.post('/search', async (req, res) => {
   try {
     const locals = {
       title: "Search",
-      description: "Simple Blog created with NodeJs, Express & MongoDb."
+      description: "Simple web app created with NodeJs, Express & MongoDb."
     }
 
     let searchTerm = req.body.searchTerm;
@@ -110,16 +110,5 @@ router.get('/about', (req, res) => {
     currentRoute: '/about'
   });
 });   
-
-// /**
-//  * GET /
-//  * Admin
-// */
-// router.get('/index', (req, res) => {
-//   res.render('admin', {
-//     currentRoute: '/admin'
-//   });
-// });   
-
 
 module.exports = router;
