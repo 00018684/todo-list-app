@@ -1,1 +1,27 @@
-<h1>Home</h1>
+<div class="author">
+  <h1 class="author__heading">00018684</h1>
+  <p class="author__body">This web application was created to fulfill Web Technology module’s requirements and does not represent an actual company or service</p>
+</div>
+
+<img src="/img/notetaking.jpeg" alt="person taking notes" class="note-image" width="981" height="528">
+
+<section class="articles">
+  <h2 class="articles__heading">Latest Posts</h2>
+
+  <ul class="article-ul">
+    <% data.forEach(post => { %>
+      <li>
+        <a href="/post/<%= post._id %>">
+          <span><%= post.title %></span>
+          <span class="article-list__date"><%= post.createdAt.toDateString() %></span>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+
+
+  <% if (nextPage !== null) { %>
+    <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
+  <% } %>
+
+</section>
