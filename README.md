@@ -24,6 +24,11 @@ How to Run the App Locally
    ```bash
    git clone https://github.com/00018684/todo-list-app.git
 
+   deployed links:
+https://glitch.com/edit/#!/blue-zippy-dragonfly
+
+https://blue-zippy-dragonfly.glitch.me
+
    References: 
 
    study.com (2024).note-taking[image].Available from https://study.com/cimages/multimages/16/adobestock_133450340.jpeg [Accessed 8 April 2025]
